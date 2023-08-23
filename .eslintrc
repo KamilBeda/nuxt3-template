@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "@nuxtjs/eslint-config-typescript",
+    "plugin:prettier/recommended",
+    "plugin:yml/standard",
+    "plugin:yml/prettier"
+  ],
+  "root": true,
+  "rules": {
+    "yml/sort-keys": ["error", { "pathPattern": "^.*$", "order": { "type": "asc" } }]
+  }
+}

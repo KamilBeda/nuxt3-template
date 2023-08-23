@@ -1,0 +1,12 @@
+.github
+.idea
+.vscode
+.nuxt
+node_modules
+.output
+
+# Lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+pnpm-lock.json

@@ -1,0 +1,8 @@
+.github
+.idea
+.vscode
+.nuxt
+node_modules
+*.yml
+*.yaml
+.output
