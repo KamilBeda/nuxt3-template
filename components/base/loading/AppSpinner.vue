@@ -3,7 +3,6 @@ withDefaults(
   defineProps<{
     secondary?: boolean
     size?: number
-    darkMode?: boolean
     bgColor?: string
     color?: string
   }>(),
@@ -12,7 +11,7 @@ withDefaults(
     size: 24,
     darkMode: false,
     bgColor: 'rgba(0,0,0,0.2)',
-    color: '#3A5292',
+    color: 'black',
   }
 )
 </script>
@@ -23,7 +22,6 @@ withDefaults(
       class="loader"
       :class="{
         'loader--secondary': secondary,
-        'loader--dark': darkMode,
       }"
       :style="{
         '--size': `${size}px`,
@@ -56,10 +54,6 @@ withDefaults(
   border-left-color: var(--color);
   transform: translateZ(0);
   animation: load8 1.1s infinite linear;
-}
-
-.loader.loader--secondary {
-  @apply !border-l-secondary border-white/20;
 }
 
 @keyframes load8 {
